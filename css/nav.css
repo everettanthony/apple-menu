@@ -1,0 +1,170 @@
+.hidden {
+	display: none;
+}
+
+.nav {
+	background: rgba(0,0,0,0.8);
+	box-sizing: content-box;
+	display: block;
+	height: 48px;
+	left: 0;
+	margin: 0;
+	max-height: none;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	transition: background 0.35s linear,height 0.35s ease-in;
+	user-select: none;
+	width: 100%;
+	z-index: 99;
+}
+
+body.nav-in .nav {
+    height: 100%;
+    background: #000;
+    transition: background 0.35s linear,height 0.35s ease-in 200ms;
+}
+
+.nav-content {
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-header {
+	height: 48px;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+.nav-header li {
+	height: 48px;
+}
+
+.nav-mbl-btn {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+    width: 82px;
+}
+
+.nav-header li a {
+	color: #fff;
+    text-decoration: none;
+}
+
+.nav-list {
+	box-sizing: border-box;
+	cursor: default;
+	height: auto;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 0 48px;
+	position: absolute;
+	text-align: justify;
+	top: 44px;
+	transition: visibility 0s linear 1s;
+	user-select: none;
+	visibility: hidden;
+	width: auto;
+	z-index: 2;
+}
+
+body.nav-in .nav-list {
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.nav-list li {
+	border-bottom: 1px solid #333;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	opacity: 0;
+	position: relative;
+	transform: scale(1.1) translateY(-24px);
+	transition: opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
+	vertical-align: top;
+	width: 100%;
+	z-index: 1;
+}
+
+body.nav-in .nav-list li {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+}
+
+.nav-list li a {
+	color: #fff;
+	display: block;
+	font-weight: 400;
+	max-width: none;
+	opacity: 1;
+	outline-offset: 0;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	width: auto;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.nav-list li {
+    transition-delay: 200ms,200ms;
+}
+
+body.nav-in .nav-list li {
+    transition-delay: 200ms,200ms;
+}
+
+.nav-list li:nth-child(2) {
+    transition-delay: 175ms,175ms;
+}
+
+body.nav-in .nav-list li:nth-child(2) {
+    transition-delay: 250ms,250ms;
+}
+
+.nav-list li:nth-child(3) {
+    transition-delay: 150ms,150ms;
+}
+
+body.nav-in .nav-list li:nth-child(3) {
+    transition-delay: 300ms,300ms;
+}
+
+.nav-list li:nth-child(4) {
+    transition-delay: 125ms,125ms;
+}
+
+body.nav-in .nav-list li:nth-child(4) {
+    transition-delay: 350ms,350ms;
+}
+
+.nav-list li:nth-child(5) {
+    transition-delay: 100ms,100ms;
+}
+
+body.nav-in .nav-list li:nth-child(5) {
+    transition-delay: 400ms,400ms;
+}
+
+.nav-list li:nth-child(6) {
+    transition-delay: 75ms,75ms;
+}
+
+body.nav-in .nav-list li:nth-child(6) {
+    transition-delay: 450ms,450ms;
+}
